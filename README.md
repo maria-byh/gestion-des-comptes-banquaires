@@ -1,2 +1,2 @@
-# gestion-des-comptes-banquaires
-java app for banc acounts'  management
+# système de gestion-des-comptes-banquaires
+j2ee system for banc acounts'  management
