@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application de Gestion des Comptes</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f8f9fa;
+            color: #495057;
+        }
+
+        header {
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .operation-type {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px 0px #ced4da;
+            margin: 20px;
+        }
+
+        .operation-type img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .operation-type p {
+            font-size: 20px;
+            margin: 0;
+            color: #495057;
+        }
+
+        .operation-type a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .back-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 14px;
+            padding: 8px;
+            background-color: #495057;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .back-btn:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="back-btn" onclick="history.back()">Retour</a>
+    
+    <header>
+        <h1>Gérez Vos Comptes</h1>
+    </header>
+
+    <div class="container">
+        <div class="operation-type">
+            <a href="versement.jsp">
+                <img src="images/depot-dargent.png" alt="Versement">
+            </a>
+            <p>Initier un Dépôt</p>
+            <a href="versement.jsp">Commencer</a>
+        </div>
+
+        <div class="operation-type">
+            <a href="retrait.jsp">
+                <img src="images/retrait-dargent.png" alt="Retrait">
+            </a>
+            <p>Initier un Retrait</p>
+            <a href="retrait.jsp">Commencer</a>
+        </div>
+    </div>
+</body>
+</html>
